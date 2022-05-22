@@ -8,7 +8,7 @@ import {
 
 // That is the dev-tools Github connection that you receive when authenticating your AWS account with Github.
 const CDK_PIPELINE_SOURCE_CONNECTION =
-  "arn:aws:codestar-connections:us-east-1:712363797299:connection/e31e7b81-3693-43f7-9fe9-4411cc94e50e";
+  "arn:aws:codestar-connections:eu-central-1:638500442919:connection/611d288d-7067-41ce-b730-980d659690d5";
 
 // That is the sample repo guiding the Medium article
 const cdkSourceInput = CodePipelineSource.connection(
