@@ -1,9 +1,9 @@
 import { Construct } from "constructs";
 import { CfnOutput, Stack, StackProps } from "aws-cdk-lib";
 
+import { domains } from "../constants/domains";
 import { buildDelegatedDomainHostedZone } from "../services/Route53/delegatedDomainHostedZone";
 import { buildDelegatedNameServerRecord } from "../services/CustomResources/delegatedNameServerRecord";
-import { domains } from "../constants/domains";
 
 interface DelegatedDomainStackProps extends StackProps {
   stageConfig: {

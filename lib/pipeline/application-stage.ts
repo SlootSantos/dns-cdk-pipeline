@@ -1,7 +1,7 @@
 import { Construct } from "constructs";
-import { CodeBuildStep, CodePipelineSource } from "aws-cdk-lib/pipelines";
-import { BuildSpec, ComputeType } from "aws-cdk-lib/aws-codebuild";
 import { CfnOutput, Stage, StageProps } from "aws-cdk-lib";
+import { BuildSpec, ComputeType } from "aws-cdk-lib/aws-codebuild";
+import { CodeBuildStep, CodePipelineSource } from "aws-cdk-lib/pipelines";
 
 import { DelegatedDomainStack } from "../stacks/application-stack";
 
