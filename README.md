@@ -1,14 +1,8 @@
-# Welcome to your CDK TypeScript project!
+# DNS pipeline 
+This project is following the Medium post about how to manage your DNS via CDK pipelines
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+### Before getting started
+- Make sure to have all accounts bootstrapped with your latest CDK version _(**this project is using the CDK v2**)_
+    - when bootstrapping make sure to add the `--trust <pipeline-account-id>` parameter and trust the pipeline account to deploy CFN stacks into the application account
+- Make sure to replace the `connection`-string and the git repo in the `lib/pipeline/pipeline.ts`
+- Make sure to replace the account-ids in `lib/constants/accounts.ts`
