@@ -80,7 +80,10 @@ export class DNSPipelineStack extends cdk.Stack {
         }
       );
 
-      pipeline.addStage(applicationDomain);
+      const sanityCheck =
+        applicationDomain.buildSanityCheckCodeBuild(cdkSourceInput);
+
+      pipeline.addStage(applicationDomain).addPost(sanityCheck);
     });
   }
 }
