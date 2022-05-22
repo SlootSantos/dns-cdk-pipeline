@@ -25,8 +25,8 @@ const cdkSourceInput = CodePipelineSource.connection(
 );
 
 const applicationStages: {
-  targetAccount: string;
-  stageName: "dev" | "prod";
+  targetAccount: string; // this will be the account we're rolling out to
+  stageName: "dev" | "prod"; // this is also going to be the subdomain => dev.domain.com
 }[] = [
   {
     stageName: "dev",
