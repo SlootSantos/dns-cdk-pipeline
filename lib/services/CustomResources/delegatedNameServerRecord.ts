@@ -38,7 +38,7 @@ const listHostedZone = (scope: Construct, subdomain: string) => {
     physicalResourceId: PhysicalResourceId.fromResponse("HostedZones.0.Id"),
     assumedRoleArn: `arn:aws:iam::${accounts.rootDomain}:role/${NS_CREATION_ROLE_NAME}`,
     parameters: {
-      DNSName: `${subdomain}.${domains.root}`,
+      DNSName: `${domains.root}`,
     },
     region: mainRegion,
   };
