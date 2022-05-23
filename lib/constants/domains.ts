@@ -1,5 +1,5 @@
 export const domains = {
-  root: "awsexample.de",
+  root: "mydomain.com",
 };
 
 export const subdomains = {
